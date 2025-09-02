@@ -1,0 +1,457 @@
+@import url('http://googleusercontent.com/css?family=Playfair+Display:400,700');
+
+
+header {
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* ¡Añade esto! */
+    z-index: 10;   /* ¡Añade esto! Asegura que esté siempre encima */
+}
+
+.container {
+    color: #ffffff;
+    display: flex;
+    align-items: center;    
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 500px;
+    padding: 10px;
+}
+
+.container_crud {
+    text-decoration: none;
+    align-items:center;
+    display: flex;    
+    justify-content: right;
+    color: #ffffff; /* Color de texto blanco. */
+    font-weight: bold; /* Resalta los enlaces con texto en negrita. */
+    padding: 0px 10px; /* Espaciado interno en los enlaces. */
+    border-radius: 4px; /* Bordes redondeados para los enlaces. */
+    transition: background-color 0.7s; /* Suaviza el cambio de color de fondo (opcional). */
+    gap: 5px;
+}
+
+
+
+
+header nav ul {
+    list-style: none; /* Elimina los puntos de lista predeterminados. */
+    display: flex; /* Muestra los elementos de la lista en una fila. */
+    gap: 20px; /* Espaciado entre los elementos de la lista. */
+    max-width: 100%;
+}
+
+header nav ul li a  {
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces. */
+    color: #ffffff; /* Color de texto blanco. */
+    font-weight: bold; /* Resalta los enlaces con texto en negrita. */
+    padding: 5px 10px; /* Espaciado interno en los enlaces. */
+    border-radius: 4px; /* Bordes redondeados para los enlaces. */
+    transition: background-color 0.7s; /* Suaviza el cambio de color de fondo (opcional). */
+
+}
+
+header nav ul li a:hover, .container_crud a:hover {
+    background-color: #5a5a59; /* Fondo azul claro al pasar el cursor. */
+    color: #ffffff; /* Cambia el color del texto a negro. */
+}
+
+
+h1, h2, h3, p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #ffffff; /* Establece el color del texto en blanco. */
+    margin: auto;
+}
+
+.titulo {
+    background-image: url(img/fondoinformacion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative; /* Crea un contexto de posicionamiento para la imagen. */
+    text-align: center; /* Centra el texto dentro del contenedor. */
+    margin-top: auto; /* Espaciado alrededor del título. */
+    color: #ffffff; /* Color blanco para el texto, para que contraste con la imagen de fondo. */
+    padding: 100px 20px; /* Añade espaciado para que la imagen de fondo sea visible. */
+    width: 100%;
+}
+
+.titulo img {
+    position: absolute; /* Posiciona la imagen detrás del contenido del título. */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 91%;
+    object-fit: cover; /* Hace que la imagen cubra todo el contenedor sin deformarse. */
+    z-index: -1; /* Coloca la imagen detrás de otros elementos en .titulo. */
+    opacity: 1; /* Opcional: reduce la opacidad para mejorar la legibilidad del texto. */
+}
+
+.titulo h1 {
+    font-size: 3em; /* Tamaño grande para el título principal. */
+    margin-bottom: auto; /* Espaciado inferior para separación del subtítulo. */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.396); /* Sombra para mejorar la legibilidad. */
+}
+
+.titulo p {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.396);
+}
+
+footer {
+    text-align: center; /* Centra el texto. */
+    padding: 20px; /* Espaciado interno. */
+    background-color: rgb(0, 0, 0); /* Fondo semitransparente. */
+    position: relative; /* Permite posicionarlo según el flujo normal del documento. */
+    color: #ffffff; /* Texto blanco. */
+    font-size: 0.9em; /* Texto más pequeño para el pie. */
+}   
+
+.imagen-hotel2   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.imagen-hotel2 img {
+    max-width: 600px;
+    max-height: 250px;
+    width: 100%;
+    box-shadow: 0 2px 12px #0007;
+}
+
+.imagen-hotel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.imagen-hotel img {
+    max-width: 600px;
+    max-height: 250px;
+    width: 100%;
+    box-shadow: 0 2px 12px #0007;
+    margin-top: auto;
+}
+
+.texto-imagen {
+    max-width: 600px;
+    text-align: left;
+    color: #000000;
+    font-size: 1.0em;
+}
+
+
+
+
+#informacion .imagen-hotel {
+    flex-direction: row-reverse;
+}
+
+#informacion {
+    background-color: rgb(0, 0, 0);
+    /*background-image: url('img/fondoinformacion.jpg');*/
+    opacity: 1;
+    background-size: cover;
+}
+
+.slides {
+    display: flex;
+    /* Se eliminan gap, padding y margin para que las imágenes ocupen todo el espacio. */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor del carrusel. */
+    flex-shrink: 0; /* Previene que las imágenes se encojan y mantiene su ancho. */
+    max-height: 500px;
+    box-shadow: 0 2px 12px #0007;
+    object-fit: cover; /* La imagen cubre el área manteniendo su proporción. */
+    background-size: cover;
+}
+
+.carousel{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00000046; /* Fondo negro sólido */
+    color: white;
+    border: 1px solid white; /* Borde sutil para un toque premium */
+    padding: 15px 15px; /* Más ancho que alto para la forma rectangular */
+    cursor: pointer;
+    border-radius: 5px; /* Esquinas ligeramente redondeadas */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: transparent;
+    transform: translateY(-50%) scale(1.1); /* Efecto de escala para destacar */
+}
+
+#fotografias {
+    background-image: url(img/fondoinformacion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 1;
+    background-size: cover;
+    margin-bottom: auto;
+    padding: 10px;
+}
+
+
+
+.btn-reservar {
+    display: inline-block;
+    background-color: #000000; /* Color del botón. */
+    color: #ffffff; /* Color del texto. */
+    padding: 15px 30px; /* Espaciado interno. */
+    margin-top: 20px; /* Espacio arriba del botón. */
+    text-decoration: none; /* Sin subrayado. */
+    border-radius: 50px; /* Bordes redondeados. */
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse. */
+}
+
+.btn-reservar:hover {
+    background-color: #413f3f; /* Color al pasar el mouse. */
+}
+
+#informacion, #informacion-2 {
+    background-image: url(img/fondoinformacion.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10px 20px;
+    margin-bottom: auto;
+}
+
+#informacion .imagen-hotel {
+    flex-direction: row-reverse;
+}
+
+#informacion-2 .imagen-hotel {
+    flex-direction: row; /* Esto hace que la imagen esté a la izquierda */
+}
+
+#habitaciones {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(img/mapa.jpg);
+    padding: 10px;
+    margin-bottom: auto;
+}
+
+.habitaciones-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.habitacion-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.habitacion-card:hover {
+    transform: translateY(-10px);
+}
+
+.habitacion-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.habitacion-card h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+.habitacion-card p {
+    color: #666;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.habitacion-card .precio {
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #aea65b;
+    margin-bottom: 15px;
+}
+
+.btn-card {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-card:hover {
+    background-color: #555;
+}
+
+/* Sección de Instalaciones */
+#instalaciones {
+    margin-bottom: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(img/mapa.jpg);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.instalaciones-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: auto;
+}
+
+.instalacion-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.instalacion-card:hover {
+    transform: translateY(-10px);
+}
+
+.instalacion-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.instalacion-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+.instalacion-card p {
+    color: #666;
+    padding: 0 20px 20px;
+    font-size: 1em;
+}
+
+/* Sección de Ubicación */
+#ubicaciones {
+    margin-bottom: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(img/mapa.jpg);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#ubicaciones .ubicacion-contenido {
+    max-width: 900px;
+    margin: 0 auto; /* Centra el contenido */
+}
+
+#ubicaciones p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#ubicaciones iframe {
+    width: 100%; /* El mapa se ajusta al ancho del contenedor */
+    height: 450px;
+    border: none; /* Elimina el borde */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordes redondeados para un aspecto más moderno */
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-contenido p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.contacto-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contacto-info p {
+    margin: 0;
+}
+

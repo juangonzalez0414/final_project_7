@@ -1,0 +1,90 @@
+/* Estilos para el cuerpo del panel de administración */
+body {
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centra el texto por defecto */
+}
+
+/* Contenedor principal del contenido */
+main {
+    padding: 50px;
+}
+
+/* Estilos para los encabezados */
+h2 {
+    color: #e7e7e7;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+}
+
+/* Estilos para el botón "Volver a la página principal" */
+/* Estilos para el botón de volver a la página principal */
+.volver-btn {
+    display: inline-block;
+    margin-top: 40px; /* Separación del texto superior */
+    padding: 15px 30px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.volver-btn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.volver-btn a {
+    text-decoration: none;
+    color: #ffffff; /* Color de texto blanco. */
+    font-weight: bold; /* Resalta los enlaces con texto en negrita. */
+    padding: 5px 10px; /* Espaciado interno en los enlaces. */
+    border-radius: 4px; /* Bordes redondeados para los enlaces. */
+    transition: background-color 0.7s;
+
+}
+
+/* Estilos para los enlaces de navegación CRUD */
+/* Estilos para los enlaces de navegación */
+.container_crud {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Crea un espacio de 20px entre los botones */
+    padding: 20px 0;
+    margin-top: 40px; /* Añade un margen superior para separarlos del contenido */
+}
+
+/* Estilos de los botones (los enlaces 'a') */
+.container_crud a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000000;
+    padding: 15px 30px; /* Ajusta el tamaño de los botones */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+/* Efecto al pasar el cursor sobre los botones */
+.container_crud a:hover {
+    background-color: #444;
+    transform: translateY(-2px); /* Efecto de "elevación" */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra más grande al pasar el cursor */
+}

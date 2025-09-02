@@ -1,0 +1,42 @@
+/* Contenedor principal para centrar el contenido */
+.error-container {
+    text-align: center;
+    padding: 50px;
+    color: #ffffff;
+}
+
+/* Título de error */
+.error-container h1 {
+    color: #ff1900; /* Color rojo para el error */
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Mensaje de error */
+.error-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Botón para volver al login */
+.btn-volver {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #797c79;
+}
+
+body{
+    background-image: url(seguridad.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
